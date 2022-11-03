@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+    color:white;
 }
 
 body {
@@ -7,4 +9,18 @@ body {
     font-size: 62.5%;
     line-height: 1.5rem;
     font-family: sans-serif;
+}
+
+input {
+    height: 2.5rem;
+    color: black;
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.todayWeather, .futureWeather {
+    border: 1px solid white;
 }
