@@ -18,7 +18,8 @@ input {
 }
 
 .bold {
-    font-weight: bolder;
+    font-weight: 700;
+    font-size: 125%;
 }
 
 .todayWeather, .futureWeather {
