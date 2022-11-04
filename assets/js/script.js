@@ -61,6 +61,7 @@ for (let i=0; i<newCityBtnEl.length; i++) {
     newCityBtnEl[i].addEventListener("click", e => {
         e.preventDefault();
         console.log(newCityBtnEl[i].textContent);
+        city = newCityBtnEl[i].textContent;
     })
 }
 
