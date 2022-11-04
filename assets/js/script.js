@@ -46,6 +46,8 @@ function init() {
         let newCityBtn = document.createElement("button");
         newCityBtn.innerHTML = city;
         newCityBtn.style.color = "black";
+        newCityBtn.style.width = "100%";
+        newCityBtn.style.fontSize = "1rem";
         newCityBtn.classList.add("newCityBtn");
         document.getElementById("leftSide").appendChild(newCityBtn);
     }
