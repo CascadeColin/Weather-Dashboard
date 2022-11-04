@@ -37,6 +37,7 @@ searchBtnEl.addEventListener("click", e => {
     localStorage.setItem(city, city)
 })
 
+
 function init() {
     for (let i=0; i<localStorage.length; i++) {
         // console.log(typeof localStorage.key(i))
@@ -45,20 +46,28 @@ function init() {
         let newCityBtn = document.createElement("button");
         newCityBtn.innerHTML = city;
         newCityBtn.style.color = "black";
-        newCityBtn.classList.add("newCityBtn" + numberOfCities);
+        newCityBtn.classList.add("newCityBtn");
         document.getElementById("leftSide").appendChild(newCityBtn);
     }
 }
 init();
 
-// let newCityBtn = document.createElement("button");
-//     newCityBtn.innerHTML = city;
-//     newCityBtn.style.color = "black";
-//     newCityBtn.classList.add("newCityBtn" + numberOfCities);
-//     document.getElementById("leftSide").appendChild(newCityBtn);
+//Grabs the city name from buttons that are created as a result of previous searches
+//TO-DO connect to API to allow these buttons to search and display weather data
+//searchkey: prevSearch
+let newCityBtnEl = document.querySelectorAll(".newCityBtn");
+console.log(newCityBtnEl)
+for (let i=0; i<newCityBtnEl.length; i++) {
+    newCityBtnEl[i].addEventListener("click", e => {
+        e.preventDefault();
+        console.log(newCityBtnEl[i].textContent);
+    })
+}
 
 /*
 2) Connect fetch request from weather API
+    -connect main search button
+    -connect dynamically created buttons (searchkey: prevSearch)
 3) Connect requested API data to the page
 4) Make the weather cards pretty
 
