@@ -55,13 +55,15 @@ init();
 //Grabs the city name from buttons that are created as a result of previous searches
 //TO-DO connect to API to allow these buttons to search and display weather data
 //searchkey: prevSearch
+//FIXME: cannot search results without refreshing page
 let newCityBtnEl = document.querySelectorAll(".newCityBtn");
 console.log(newCityBtnEl)
 for (let i=0; i<newCityBtnEl.length; i++) {
     newCityBtnEl[i].addEventListener("click", e => {
         e.preventDefault();
-        console.log(newCityBtnEl[i].textContent);
+        // console.log(newCityBtnEl[i].textContent);
         city = newCityBtnEl[i].textContent;
+        console.log(city)
     })
 }
 
