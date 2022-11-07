@@ -25,3 +25,8 @@ input {
 .todayWeather, .futureWeather {
     border: 1px solid white;
 }
+
+/* #fiveDayEl div p {
+    background-color: white;
+    color:black;
+} */
