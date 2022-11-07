@@ -159,10 +159,10 @@ function createSearchTags() {
   localStorage.setItem(city, city);
   let newCityBtn = document.createElement("button");
   newCityBtn.innerHTML = city;
-  newCityBtn.style.color = "black";
+  newCityBtn.style.color = "#cccccc";
   newCityBtn.style.width = "100%";
   newCityBtn.style.fontSize = "1rem";
-  newCityBtn.classList.add("newCityBtn");
+  newCityBtn.classList.add("newCityBtn", "btn", "btn-secondary");
   document.getElementById("leftSide").appendChild(newCityBtn);
 }
 
