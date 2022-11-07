@@ -11,6 +11,11 @@ body {
     font-family: sans-serif;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 input {
     height: 2.5rem;
     color: black;
@@ -22,11 +27,25 @@ input {
     font-size: 125%;
 }
 
-.todayWeather, .futureWeather {
+.futureWeather {
     border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #333;
 }
 
-/* #fiveDayEl div p {
-    background-color: white;
-    color:black;
-} */
+.todayWeather {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #333;
+}
+
+.rightSide, .leftSide {
+
+}
+
+h4 {
+    /* border-top: 1px solid white; */
+    padding-top: 1rem;
+}
