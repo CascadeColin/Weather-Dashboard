@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    color:white;
+    color:#cccccc;
 }
 
 body {
@@ -11,20 +11,17 @@ body {
     font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 input {
     height: 2.5rem;
     color: black;
     font-size: 1rem;
-}
-
-.bold {
-    font-weight: 700;
-    font-size: 125%;
+    background-color: #e6e6e6;
 }
 
 .futureWeather {
@@ -32,20 +29,42 @@ input {
     border-radius: 10px;
     margin: 5px;
     background-color: #333;
+    padding: 1rem;
 }
 
 .todayWeather {
     border: 1px solid white;
     border-radius: 10px;
-    margin: 5px;
+    /* margin: 5px; */
     background-color: #333;
+    padding:1rem 0 0 0;
 }
 
-.rightSide, .leftSide {
+#rightSide, #leftSide {
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
 
+#leftSide {
+    border-right: 1px solid white;
 }
 
 h4 {
-    /* border-top: 1px solid white; */
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+p {
+    font-size: 135%
+}
+
+.newCityBtn {
+    margin: 5px 0 5px 0;
+}
+
+.btn-secondary {
+    color:#cccccc;
+}
+
+#dayOneEl, #dayTwoEl, #dayThreeEl, #dayFourEl, #dayFiveEl {
+    margin-left: 0;
 }

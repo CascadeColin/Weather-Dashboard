@@ -42,7 +42,7 @@ function searchButton(e) {
     })
     .then((today) => {
       todayCityDate.textContent =
-        today.name + ",    " + moment.unix(today.dt).format("MMM D, YYYY");
+        today.name + ": " + moment.unix(today.dt).format("MMM D, YYYY");
       todayTemp.textContent = "Temp: " + Math.round(today.main.temp) + " °F";
       todayCloud.src =
         "https://openweathermap.org/img/wn/" + today.weather[0].icon + ".png";
@@ -62,93 +62,93 @@ function searchButton(e) {
       //DAY 1
       dayOneEl.children[0].textContent =
         data.city.name +
-        ", " +
-        moment.unix(data.list[0].dt).format("MMM D, YYYY");
+        ": " +
+        moment.unix(data.list[7].dt).format("MMM D, YYYY");
       icon1.setAttribute(
         "src",
         "https://openweathermap.org/img/wn/" +
-          data.list[0].weather[0].icon +
+          data.list[7].weather[0].icon +
           ".png"
       );
-      icon1.setAttribute("alt", data.list[0].weather[0].description);
+      icon1.setAttribute("alt", data.list[7].weather[0].description);
       dayOneEl.children[2].textContent =
-        "Temp: " + Math.round(data.list[0].main.temp) + " °F";
+        "Temp: " + Math.round(data.list[7].main.temp) + " °F";
       dayOneEl.children[3].textContent =
-        "Wind: " + Math.round(data.list[0].wind.speed) + " MPH";
+        "Wind: " + Math.round(data.list[7].wind.speed) + " MPH";
       dayOneEl.children[4].textContent =
-        "Humidity: " + data.list[0].main.humidity + " %";
+        "Humidity: " + data.list[7].main.humidity + " %";
       //DAY 2
       dayTwoEl.children[0].textContent =
         data.city.name +
-        ", " +
-        moment.unix(data.list[8].dt).format("MMM D, YYYY");
+        ": " +
+        moment.unix(data.list[15].dt).format("MMM D, YYYY");
       icon2.setAttribute(
         "src",
         "https://openweathermap.org/img/wn/" +
-          data.list[8].weather[0].icon +
+          data.list[15].weather[0].icon +
           ".png"
       );
-      icon2.setAttribute("alt", data.list[8].weather[0].description);
+      icon2.setAttribute("alt", data.list[15].weather[0].description);
       dayTwoEl.children[2].textContent =
-        "Temp: " + Math.round(data.list[8].main.temp) + " °F";
+        "Temp: " + Math.round(data.list[15].main.temp) + " °F";
       dayTwoEl.children[3].textContent =
-        "Wind: " + Math.round(data.list[8].wind.speed) + " MPH";
+        "Wind: " + Math.round(data.list[15].wind.speed) + " MPH";
       dayTwoEl.children[4].textContent =
-        "Humidity: " + data.list[8].main.humidity + " %";
+        "Humidity: " + data.list[15].main.humidity + " %";
       //DAY 3
       dayThreeEl.children[0].textContent =
         data.city.name +
-        ", " +
-        moment.unix(data.list[16].dt).format("MMM D, YYYY");
+        ": " +
+        moment.unix(data.list[23].dt).format("MMM D, YYYY");
       icon3.setAttribute(
         "src",
         "https://openweathermap.org/img/wn/" +
-          data.list[16].weather[0].icon +
+          data.list[23].weather[0].icon +
           ".png"
       );
-      icon3.setAttribute("alt", data.list[16].weather[0].description);
+      icon3.setAttribute("alt", data.list[23].weather[0].description);
       dayThreeEl.children[2].textContent =
-        "Temp: " + Math.round(data.list[16].main.temp) + " °F";
+        "Temp: " + Math.round(data.list[23].main.temp) + " °F";
       dayThreeEl.children[3].textContent =
-        "Wind: " + Math.round(data.list[16].wind.speed) + " MPH";
+        "Wind: " + Math.round(data.list[23].wind.speed) + " MPH";
       dayThreeEl.children[4].textContent =
-        "Humidity: " + data.list[16].main.humidity + " %";
+        "Humidity: " + data.list[23].main.humidity + " %";
       //DAY 4
       dayFourEl.children[0].textContent =
         data.city.name +
-        ", " +
-        moment.unix(data.list[24].dt).format("MMM D, YYYY");
+        ": " +
+        moment.unix(data.list[31].dt).format("MMM D, YYYY");
       icon4.setAttribute(
         "src",
         "https://openweathermap.org/img/wn/" +
-          data.list[24].weather[0].icon +
+          data.list[31].weather[0].icon +
           ".png"
       );
-      icon4.setAttribute("alt", data.list[24].weather[0].description);
+      icon4.setAttribute("alt", data.list[31].weather[0].description);
       dayFourEl.children[2].textContent =
-        "Temp: " + Math.round(data.list[24].main.temp) + " °F";
+        "Temp: " + Math.round(data.list[31].main.temp) + " °F";
       dayFourEl.children[3].textContent =
-        "Wind: " + Math.round(data.list[24].wind.speed) + " MPH";
+        "Wind: " + Math.round(data.list[31].wind.speed) + " MPH";
       dayFourEl.children[4].textContent =
-        "Humidity: " + data.list[24].main.humidity + " %";
+        "Humidity: " + data.list[31].main.humidity + " %";
       //DAY 5
       dayFiveEl.children[0].textContent =
         data.city.name +
-        ", " +
-        moment.unix(data.list[32].dt).format("MMM D, YYYY");
+        ": " +
+        moment.unix(data.list[39].dt).format("MMM D, YYYY");
       icon5.setAttribute(
         "src",
         "https://openweathermap.org/img/wn/" +
-          data.list[32].weather[0].icon +
+          data.list[39].weather[0].icon +
           ".png"
       );
-      icon5.setAttribute("alt", data.list[32].weather[0].description);
+      icon5.setAttribute("alt", data.list[39].weather[0].description);
       dayFiveEl.children[2].textContent =
-        "Temp: " + Math.round(data.list[32].main.temp) + " °F";
+        "Temp: " + Math.round(data.list[39].main.temp) + " °F";
       dayFiveEl.children[3].textContent =
-        "Wind: " + Math.round(data.list[32].wind.speed) + " MPH";
+        "Wind: " + Math.round(data.list[39].wind.speed) + " MPH";
       dayFiveEl.children[4].textContent =
-        "Humidity: " + data.list[32].main.humidity + " %";
+        "Humidity: " + data.list[39].main.humidity + " %";
     });
   createSearchTags();
 }
@@ -179,7 +179,7 @@ document.getElementById("leftSide").addEventListener("click", (e) => {
       })
       .then((today) => {
         todayCityDate.textContent =
-          today.name + ",    " + moment.unix(today.dt).format("MMM D, YYYY");
+          today.name + ": " + moment.unix(today.dt).format("MMM D, YYYY");
         todayTemp.textContent = "Temp: " + Math.round(today.main.temp) + " °F";
         todayCloud.src =
           "https://openweathermap.org/img/wn/" + today.weather[0].icon + ".png";
@@ -200,93 +200,93 @@ document.getElementById("leftSide").addEventListener("click", (e) => {
         //DAY 1
         dayOneEl.children[0].textContent =
           data.city.name +
-          ", " +
-          moment.unix(data.list[0].dt).format("MMM D, YYYY");
+          ": " +
+          moment.unix(data.list[7].dt).format("MMM D, YYYY");
         icon1.setAttribute(
           "src",
           "https://openweathermap.org/img/wn/" +
-            data.list[0].weather[0].icon +
+            data.list[7].weather[0].icon +
             ".png"
         );
-        icon1.setAttribute("alt", data.list[0].weather[0].description);
+        icon1.setAttribute("alt", data.list[7].weather[0].description);
         dayOneEl.children[2].textContent =
-          "Temp: " + Math.round(data.list[0].main.temp) + " °F";
+          "Temp: " + Math.round(data.list[7].main.temp) + " °F";
         dayOneEl.children[3].textContent =
-          "Wind: " + Math.round(data.list[0].wind.speed) + " MPH";
+          "Wind: " + Math.round(data.list[7].wind.speed) + " MPH";
         dayOneEl.children[4].textContent =
-          "Humidity: " + data.list[0].main.humidity + " %";
+          "Humidity: " + data.list[7].main.humidity + " %";
         //DAY 2
         dayTwoEl.children[0].textContent =
           data.city.name +
-          ", " +
-          moment.unix(data.list[8].dt).format("MMM D, YYYY");
+          ": " +
+          moment.unix(data.list[15].dt).format("MMM D, YYYY");
         icon2.setAttribute(
           "src",
           "https://openweathermap.org/img/wn/" +
-            data.list[8].weather[0].icon +
+            data.list[15].weather[0].icon +
             ".png"
         );
-        icon2.setAttribute("alt", data.list[8].weather[0].description);
+        icon2.setAttribute("alt", data.list[15].weather[0].description);
         dayTwoEl.children[2].textContent =
-          "Temp: " + Math.round(data.list[8].main.temp) + " °F";
+          "Temp: " + Math.round(data.list[15].main.temp) + " °F";
         dayTwoEl.children[3].textContent =
-          "Wind: " + Math.round(data.list[8].wind.speed) + " MPH";
+          "Wind: " + Math.round(data.list[15].wind.speed) + " MPH";
         dayTwoEl.children[4].textContent =
-          "Humidity: " + data.list[8].main.humidity + " %";
+          "Humidity: " + data.list[15].main.humidity + " %";
         //DAY 3
         dayThreeEl.children[0].textContent =
           data.city.name +
-          ", " +
-          moment.unix(data.list[16].dt).format("MMM D, YYYY");
+          ": " +
+          moment.unix(data.list[23].dt).format("MMM D, YYYY");
         icon3.setAttribute(
           "src",
           "https://openweathermap.org/img/wn/" +
-            data.list[16].weather[0].icon +
+            data.list[23].weather[0].icon +
             ".png"
         );
-        icon3.setAttribute("alt", data.list[16].weather[0].description);
+        icon3.setAttribute("alt", data.list[23].weather[0].description);
         dayThreeEl.children[2].textContent =
-          "Temp: " + Math.round(data.list[16].main.temp) + " °F";
+          "Temp: " + Math.round(data.list[23].main.temp) + " °F";
         dayThreeEl.children[3].textContent =
-          "Wind: " + Math.round(data.list[16].wind.speed) + " MPH";
+          "Wind: " + Math.round(data.list[23].wind.speed) + " MPH";
         dayThreeEl.children[4].textContent =
-          "Humidity: " + data.list[16].main.humidity + " %";
+          "Humidity: " + data.list[23].main.humidity + " %";
         //DAY 4
         dayFourEl.children[0].textContent =
           data.city.name +
-          ", " +
-          moment.unix(data.list[24].dt).format("MMM D, YYYY");
+          ": " +
+          moment.unix(data.list[31].dt).format("MMM D, YYYY");
         icon4.setAttribute(
           "src",
           "https://openweathermap.org/img/wn/" +
-            data.list[24].weather[0].icon +
+            data.list[31].weather[0].icon +
             ".png"
         );
-        icon4.setAttribute("alt", data.list[24].weather[0].description);
+        icon4.setAttribute("alt", data.list[31].weather[0].description);
         dayFourEl.children[2].textContent =
-          "Temp: " + Math.round(data.list[24].main.temp) + " °F";
+          "Temp: " + Math.round(data.list[31].main.temp) + " °F";
         dayFourEl.children[3].textContent =
-          "Wind: " + Math.round(data.list[24].wind.speed) + " MPH";
+          "Wind: " + Math.round(data.list[31].wind.speed) + " MPH";
         dayFourEl.children[4].textContent =
-          "Humidity: " + data.list[24].main.humidity + " %";
+          "Humidity: " + data.list[31].main.humidity + " %";
         //DAY 5
         dayFiveEl.children[0].textContent =
           data.city.name +
-          ", " +
-          moment.unix(data.list[32].dt).format("MMM D, YYYY");
+          ": " +
+          moment.unix(data.list[39].dt).format("MMM D, YYYY");
         icon5.setAttribute(
           "src",
           "https://openweathermap.org/img/wn/" +
-            data.list[32].weather[0].icon +
+            data.list[39].weather[0].icon +
             ".png"
         );
-        icon5.setAttribute("alt", data.list[32].weather[0].description);
+        icon5.setAttribute("alt", data.list[39].weather[0].description);
         dayFiveEl.children[2].textContent =
-          "Temp: " + Math.round(data.list[32].main.temp) + " °F";
+          "Temp: " + Math.round(data.list[39].main.temp) + " °F";
         dayFiveEl.children[3].textContent =
-          "Wind: " + Math.round(data.list[32].wind.speed) + " MPH";
+          "Wind: " + Math.round(data.list[39].wind.speed) + " MPH";
         dayFiveEl.children[4].textContent =
-          "Humidity: " + data.list[32].main.humidity + " %";
+          "Humidity: " + data.list[39].main.humidity + " %";
       });
   }
 });
@@ -297,10 +297,10 @@ function init() {
     city = localStorage.key(i);
     let newCityBtn = document.createElement("button");
     newCityBtn.innerHTML = city;
-    newCityBtn.style.color = "black";
+    newCityBtn.style.color = "#cccccc";
     newCityBtn.style.width = "100%";
     newCityBtn.style.fontSize = "1rem";
-    newCityBtn.classList.add("newCityBtn");
+    newCityBtn.classList.add("newCityBtn", "btn", "btn-secondary");
     document.getElementById("leftSide").appendChild(newCityBtn);
   }
 }
