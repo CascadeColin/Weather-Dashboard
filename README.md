@@ -18,11 +18,17 @@
 
 ## Description
 
-The deployed web application can be found at: 
+The deployed web application can be found at: https://cascadecolin.github.io/Weather-Dashboard/
 
-lorem ipsum
+This application allows users to search the current weather and 5 day forecast for any city that can be accessed by Open Weather Map.  I heavily relied upon APIs in the creation of this web app.  The fonts are from Google Fonts, responsiveness was achieved using Bootstrap, dates are displayed using Moment, and the weather data is from Open Weather Map.
 
-![Deployed Page]()
+I ran into some challenges with formatting the data I was getting from Open Weather Map.  In particular, it took me a while to implement the icon images for the "Clouds:" tag.  However, getting through that has made me much more confident in reading JSON formatted data and I believe I can tackle any challenge going forward.
+
+Overall, this was by far the most fun I've had doing a challenge.  This is the first deployed page that I feel is good enough to showcase with friends and family.  
+
+See Below:  Deployed page displaying results for New York City, after searching Seattle and Las Vegas.
+
+![Deployed Page](./assets/images/deployed.png)
 
 ## Technology
 
