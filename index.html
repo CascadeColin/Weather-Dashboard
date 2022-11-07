@@ -27,11 +27,11 @@
         
         <div id="rightSide" class="col column">
             <div class="todayWeather col-9">
-                <h3>(City) ((Date))</h3>
-                <p>(cloudIcon)</p>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h3 id="todayCityDate">(City) ((Date))</h3>
+                <img id="todayCloud" src="" alt=""></img>
+                <p id="todayTemp">Temp:</p>
+                <p id="todayWind">Wind:</p>
+                <p id="todayHumidity">Humidity:</p>
             </div>
             <h3>Here is your 5-Day Forecast:</h3>
             <div class="row">
@@ -73,6 +73,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
