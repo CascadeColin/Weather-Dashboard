@@ -26,9 +26,12 @@ I ran into some challenges with formatting the data I was getting from Open Weat
 
 Overall, this was by far the most fun I've had doing a challenge.  This is the first deployed page that I feel is good enough to showcase with friends and family.  
 
-See Below:  Deployed page displaying results for New York City, after searching Seattle and Las Vegas.
+### Deployed page, in desktop view, displaying results for New York City, after searching Seattle and Las Vegas.
+<img src="./assets/images/deployed.png" width="1000" height="auto">
 
-![Deployed Page](./assets/images/deployed.png)
+### Same as above, but in mobile view.
+
+<img src="./assets/images/deployedMobile.png" width="1000" height="auto">
 
 ## Technology
 
