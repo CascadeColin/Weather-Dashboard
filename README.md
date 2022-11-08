@@ -20,9 +20,11 @@
 
 The deployed web application can be found at: https://cascadecolin.github.io/Weather-Dashboard/
 
-This application allows users to search the current weather and 5 day forecast for any city that can be accessed by Open Weather Map.  I heavily relied upon APIs in the creation of this web app.  The fonts are from Google Fonts, responsiveness was achieved using Bootstrap, dates are displayed using Moment, and the weather data is from Open Weather Map.
+This application allows users to search the current weather and 5 day forecast for any city that can be accessed by Open Weather Map.  I heavily relied upon APIs in the creation of this web app.  The fonts are from Google Fonts, responsiveness was achieved using Bootstrap, dates are displayed using Moment, and the weather data is from Open Weather Map.  Searching a city generates a button that allows for it to be searched again.  These buttons persist on page reloads by utilizing localStorage.
 
 I ran into some challenges with formatting the data I was getting from Open Weather Map.  In particular, it took me a while to implement the icon images for the "Clouds:" tag.  However, getting through that has made me much more confident in reading JSON formatted data and I believe I can tackle any challenge going forward.
+
+I went down a rabbit hole with media queries and discovered the matchMedia() method.  I took it upon myself as an extra challenge to incorporate it into the project.  When combined with Bootstrap, I found this to be a very powerful tool.  Utilizing matchMedia(), combined with an event listener, allowed me to add or remove Boostrap classes dynamically based on the number of viewport pixels.
 
 Overall, this was by far the most fun I've had doing a challenge.  This is the first deployed page that I feel is good enough to showcase with friends and family.  
 
@@ -56,11 +58,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-![HTML](https://img.shields.io/badge/HTML-29%25-blue)
+![HTML](https://img.shields.io/badge/HTML-27.4%25-blue)
 
-![CSS](https://img.shields.io/badge/CSS-5.8%25-lightgrey)
+![CSS](https://img.shields.io/badge/CSS-5.7%25-lightgrey)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-62.5%25-yellow)
+![JavaScript](https://img.shields.io/badge/JavaScript-66.9%25-yellow)
 
 ### Powered by:
 
