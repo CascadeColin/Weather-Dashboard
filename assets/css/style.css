@@ -45,10 +45,6 @@ input {
     margin-left: 1rem;
 }
 
-#leftSide {
-    border-right: 1px solid white;
-}
-
 h4 {
     padding-top: 1.5rem;
 }
@@ -67,4 +63,9 @@ p {
 
 #dayOneEl, #dayTwoEl, #dayThreeEl, #dayFourEl, #dayFiveEl {
     margin-left: 0;
+}
+
+#fiveDayEl {
+    display: flex;
+    justify-content: center;
 }

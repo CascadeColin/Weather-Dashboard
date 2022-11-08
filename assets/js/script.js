@@ -1,6 +1,7 @@
 //found strict mode watching Web Dev Simplified and it seems to make debugging better
 "use strict";
-
+const MOBILE = window.matchMedia("(max-width: 768px)");
+const APIKEY = "28c84dca0408e2e881c2b1eec812a185";
 let city = "";
 let searchBtnEl = document.querySelector("#searchBtn");
 let newCityBtnEl = document.querySelector(".newCityBtn");
@@ -10,7 +11,6 @@ let todayCloud = document.querySelector("#todayCloud");
 let todayTemp = document.querySelector("#todayTemp");
 let todayWind = document.querySelector("#todayWind");
 let todayHumidity = document.querySelector("#todayHumidity");
-const APIKEY = "28c84dca0408e2e881c2b1eec812a185";
 let dayOneEl = document.getElementById("dayOneEl");
 let dayTwoEl = document.getElementById("dayTwoEl");
 let dayThreeEl = document.getElementById("dayThreeEl");
@@ -305,3 +305,31 @@ function init() {
   }
 }
 init();
+
+// 
+function mobile(ev) {
+  if (ev.matches) {
+    //change page structure
+    let mobileFormat = document.querySelector(".main");
+    let mobileLeft = document.querySelector(".leftSide");
+    console.log(mobileFormat.classList);
+    console.log(mobileLeft.classList);
+    mobileFormat.classList.add("column");
+    mobileFormat.classList.remove("row");
+    mobileLeft.classList.remove('col-xl-3', 'col-lg-3', 'col-md-4', 'col-sm-4', 'col-4')
+  } else {
+    let mobileFormat = document.querySelector(".main");
+    let mobileLeft = document.querySelector(".leftSide");
+    console.log(mobileFormat.classList);
+    console.log(mobileLeft.classList);
+    mobileFormat.classList.add("row");
+    mobileFormat.classList.remove("column");
+    mobileLeft.classList.add('col-xl-3', 'col-lg-3', 'col-md-4', 'col-sm-4', 'col-4')
+  }
+}
+
+
+
+mobile(MOBILE);
+
+MOBILE.addEventListener("change", mobile);
