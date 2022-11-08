@@ -306,7 +306,7 @@ function init() {
 }
 init();
 
-// 
+// changes page structure based on screen size
 function mobile(ev) {
   if (ev.matches) {
     //change page structure
@@ -327,9 +327,5 @@ function mobile(ev) {
     mobileLeft.classList.add('col-xl-3', 'col-lg-3', 'col-md-4', 'col-sm-4', 'col-4')
   }
 }
-
-
-
 mobile(MOBILE);
-
 MOBILE.addEventListener("change", mobile);
